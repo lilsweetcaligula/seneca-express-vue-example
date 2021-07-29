@@ -23,7 +23,7 @@ export default {
   mounted() {
     const self = this
 
-    seneca.act('role:web,hello:world', function (err, out) {
+    seneca.act('role:web,hello:world', { name: 'Bob' }, function (err, out) {
       if (err) {
         console.error(err)
         return
