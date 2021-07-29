@@ -13,7 +13,7 @@ seneca.ready(() => {
   app.use(Express.json())
 
 
-  const VIEWS_PATH = Path.join(__dirname, './views/')
+  const VIEWS_PATH = Path.join(__dirname, '..', './views/')
   app.use(Express.static(VIEWS_PATH))
 
 
@@ -35,6 +35,6 @@ seneca.ready(() => {
   })
 
 
-  app.listen(9000)
+  app.listen(process.env.PORT || 9000)
 })
 
