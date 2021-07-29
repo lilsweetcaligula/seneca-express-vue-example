@@ -1,8 +1,9 @@
 {
-  "name": "express-vue-2",
+  "name": "seneca-express-vue-example",
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "start": "npm run build && node ./src/server",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build --dest ./views",
     "lint": "vue-cli-service lint"

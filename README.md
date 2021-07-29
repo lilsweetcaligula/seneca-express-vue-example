@@ -1,24 +1,13 @@
-# express-vue-2
+# seneca-express-vue-example
 
-## Project setup
+Simply run:
 ```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
+PORT=9000 npm run start
 ```
 
-### Compiles and minifies for production
-```
-npm run build
-```
+Then navigate to `http://localhost:9000/` in your browser.
 
-### Lints and fixes files
-```
-npm run lint
-```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+If everything went okay, you should be able to see a warm greeting
+from the Express API.
+
