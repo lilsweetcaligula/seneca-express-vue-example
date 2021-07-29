@@ -3,7 +3,7 @@ const Path = require('path')
 
 const app = Express()
 
-const VIEWS_PATH = Path.join(__dirname, './build/')
+const VIEWS_PATH = Path.join(__dirname, './views/')
 app.use(Express.static(VIEWS_PATH))
 
 app.get('/', (req, res) => {
